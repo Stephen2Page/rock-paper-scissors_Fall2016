@@ -16,11 +16,12 @@ namespace RockPaperScissors
             //{ "Random 2", new RandomAI() },
             //{ "Other", new OtherAI() },
             //{ "YetAnother", new YetAnotherAI() },
+
         };
 
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
-            if (AIPlayers.Count < 1)
+            if (AIPlayers.Count < 1)    // if no AI players in dictionary
             {
                 Console.WriteLine("No AI players exist!");
                 Console.ReadKey();
@@ -28,7 +29,7 @@ namespace RockPaperScissors
             }
             while (true)
             {
-                Console.WriteLine("\n1. Human vs AI");
+                Console.WriteLine("\n1. Human vs AI"); // Menu to choose play method
                 Console.WriteLine("2. AI vs AI");
                 Console.WriteLine("3. Quit");
                 Console.Write("> ");
