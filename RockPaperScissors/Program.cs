@@ -16,6 +16,7 @@ namespace RockPaperScissors
             //{ "Random 2", new RandomAI() },
             //{ "Other", new OtherAI() },
             //{ "YetAnother", new YetAnotherAI() },
+            { "Random 1", new RandomAI() }
 
         };
 
@@ -34,6 +35,7 @@ namespace RockPaperScissors
                 Console.WriteLine("3. Quit");
                 Console.Write("> ");
                 int choice = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("");
 
                 if (choice == 1)
                 {
@@ -99,7 +101,8 @@ namespace RockPaperScissors
                 return -1;
             }
 
-            Console.WriteLine("{0}\t{1}", MoveToString(p1Choice), MoveToString(p2Choice));
+            Console.WriteLine();
+            Console.WriteLine("\t{0}\t{1}", MoveToString(p1Choice), MoveToString(p2Choice));
 
             int winner = CalculateWinner(p1Choice, p2Choice);
 
